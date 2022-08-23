@@ -7,11 +7,12 @@ package rkgrpctimeout
 
 import (
 	"context"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-entry/v2/middleware/timeout"
-	"github.com/rookie-ninja/rk-grpc/v2/boot/error"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
+
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkmidtimeout "github.com/rookie-ninja/rk-entry/v2/middleware/timeout"
+	rkgrpcerr "github.com/tegarajipangestu/rk-grpc/v2/boot/error"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
+	rkgrpcctx "github.com/tegarajipangestu/rk-grpc/v2/middleware/context"
 	"google.golang.org/grpc"
 )
 

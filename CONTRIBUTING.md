@@ -20,9 +20,9 @@ respect! We take our [code of conduct](CODE_OF_CONDUCT.md) seriously.
 [Fork][fork], then clone the repository:
 
 ```
-git clone https://github.com/rookie-ninja/rk-grpc.git
+git clone https://github.com/tegarajipangestu/rk-grpc.git
 cd rk-grpc
-git remote add upstream https://github.com/rookie-ninja/rk-grpc.git
+git remote add upstream https://github.com/tegarajipangestu/rk-grpc.git
 git fetch upstream
 ```
 
@@ -63,7 +63,7 @@ We're much more likely to approve your changes if you:
 * Write a [good commit message][commit-message].
 * Maintain backward compatibility.
 
-[fork]: https://github.com/rookie-ninja/rk-grpc/fork
-[open-issue]: https://github.com/rookie-ninja/rk-grpc/issues/new
+[fork]: https://github.com/tegarajipangestu/rk-grpc/fork
+[open-issue]: https://github.com/tegarajipangestu/rk-grpc/issues/new
 [cla]: https://cla-assistant.io/rookie-ninja/rk-grpc
 [commit-message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html

@@ -10,20 +10,21 @@ package rkgrpc
 import (
 	"context"
 	"encoding/json"
-	"github.com/rookie-ninja/rk-entry/v2/entry"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
+	"io"
+	"math/rand"
+	"net"
+	"regexp"
+	"time"
+
+	rkentry "github.com/rookie-ninja/rk-entry/v2/entry"
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/encoding"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
-	"io"
-	"math/rand"
-	"net"
-	"regexp"
-	"time"
 )
 
 const (

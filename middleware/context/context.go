@@ -7,12 +7,14 @@
 package rkgrpcctx
 
 import (
+	"net/http"
+
 	"github.com/golang-jwt/jwt/v4"
 	rkcursor "github.com/rookie-ninja/rk-entry/v2/cursor"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-logger"
-	"github.com/rookie-ninja/rk-query"
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rklogger "github.com/rookie-ninja/rk-logger"
+	rkquery "github.com/rookie-ninja/rk-query"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
 	otelcodes "go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
@@ -20,7 +22,6 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
-	"net/http"
 )
 
 var (

@@ -6,10 +6,10 @@
 package rkgrpclog
 
 import (
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-entry/v2/middleware/log"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkmidlog "github.com/rookie-ninja/rk-entry/v2/middleware/log"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
+	rkgrpcctx "github.com/tegarajipangestu/rk-grpc/v2/middleware/context"
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

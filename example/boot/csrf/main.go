@@ -8,10 +8,11 @@ import (
 	"context"
 	_ "embed"
 	"fmt"
-	"github.com/rookie-ninja/rk-entry/v2/entry"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/boot"
 	"net/http"
+
+	rkentry "github.com/rookie-ninja/rk-entry/v2/entry"
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkgrpc "github.com/tegarajipangestu/rk-grpc/v2/boot"
 )
 
 //go:embed boot.yaml

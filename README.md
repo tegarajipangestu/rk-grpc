@@ -9,12 +9,12 @@
 </p>
 
 <p align="center">
- <a href="https://github.com/rookie-ninja/rk-grpc/actions/workflows/ci.yml"><img src="https://github.com/rookie-ninja/rk-grpc/actions/workflows/ci.yml/badge.svg"></a>
+ <a href="https://github.com/tegarajipangestu/rk-grpc/actions/workflows/ci.yml"><img src="https://github.com/tegarajipangestu/rk-grpc/actions/workflows/ci.yml/badge.svg"></a>
  <a href="https://codecov.io/gh/rookie-ninja/rk-grpc"><img src="https://codecov.io/gh/rookie-ninja/rk-grpc/branch/master/graph/badge.svg?token=08TCFIIVS0"></a>
- <a href="https://goreportcard.com/badge/github.com/rookie-ninja/rk-grpc"><img src="https://goreportcard.com/badge/github.com/rookie-ninja/rk-grpc"></a>
- <a href="https://sourcegraph.com/github.com/rookie-ninja/rk-grpc?badge"><img src="https://sourcegraph.com/github.com/rookie-ninja/rk-grpc/-/badge.svg"></a>
- <a href="https://godoc.org/github.com/rookie-ninja/rk-grpc"><img src="https://godoc.org/github.com/rookie-ninja/rk-grpc?status.svg"></a>
- <a href="https://github.com/rookie-ninja/rk-grpc/releases"><img src="https://img.shields.io/github/release/rookie-ninja/rk-grpc.svg?style=flat-square"></a>
+ <a href="https://goreportcard.com/badge/github.com/tegarajipangestu/rk-grpc"><img src="https://goreportcard.com/badge/github.com/tegarajipangestu/rk-grpc"></a>
+ <a href="https://sourcegraph.com/github.com/tegarajipangestu/rk-grpc?badge"><img src="https://sourcegraph.com/github.com/tegarajipangestu/rk-grpc/-/badge.svg"></a>
+ <a href="https://godoc.org/github.com/tegarajipangestu/rk-grpc"><img src="https://godoc.org/github.com/tegarajipangestu/rk-grpc?status.svg"></a>
+ <a href="https://github.com/tegarajipangestu/rk-grpc/releases"><img src="https://img.shields.io/github/release/rookie-ninja/rk-grpc.svg?style=flat-square"></a>
  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
 <p>
 
@@ -51,7 +51,7 @@ Please refer example at [example/boot/simple](example/boot/simple).
 ### Installation
 
 ```shell
-go get github.com/rookie-ninja/rk-grpc/v2
+go get github.com/tegarajipangestu/rk-grpc/v2
 ```
 
 ### 1.Prepare .proto files
@@ -206,8 +206,8 @@ import (
   "embed"
   _ "embed"
   "github.com/rookie-ninja/rk-entry/v2/entry"
-  "github.com/rookie-ninja/rk-grpc/v2/boot"
-  proto "github.com/rookie-ninja/rk-grpc/v2/example/boot/simple/api/gen/v1"
+  "github.com/tegarajipangestu/rk-grpc/v2/boot"
+  proto "github.com/tegarajipangestu/rk-grpc/v2/example/boot/simple/api/gen/v1"
   "google.golang.org/grpc"
 )
 

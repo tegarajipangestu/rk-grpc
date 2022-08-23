@@ -7,16 +7,17 @@ package rkgrpcctx
 
 import (
 	"context"
-	"github.com/golang-jwt/jwt/v4"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-logger"
-	"github.com/rookie-ninja/rk-query"
-	"github.com/stretchr/testify/assert"
-	"go.opentelemetry.io/otel/propagation"
-	"google.golang.org/grpc/metadata"
 	"net/http"
 	"testing"
+
+	"github.com/golang-jwt/jwt/v4"
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rklogger "github.com/rookie-ninja/rk-logger"
+	rkquery "github.com/rookie-ninja/rk-query"
+	"github.com/stretchr/testify/assert"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
+	"go.opentelemetry.io/otel/propagation"
+	"google.golang.org/grpc/metadata"
 )
 
 type FakeClientStream struct {

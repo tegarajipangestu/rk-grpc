@@ -8,11 +8,12 @@ package rkgrpcauth
 
 import (
 	"context"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-entry/v2/middleware/auth"
-	"github.com/rookie-ninja/rk-grpc/v2/boot/error"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
+
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkmidauth "github.com/rookie-ninja/rk-entry/v2/middleware/auth"
+	rkgrpcerr "github.com/tegarajipangestu/rk-grpc/v2/boot/error"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
+	rkgrpcctx "github.com/tegarajipangestu/rk-grpc/v2/middleware/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

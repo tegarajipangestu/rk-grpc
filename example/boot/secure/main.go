@@ -7,9 +7,10 @@ package main
 import (
 	"context"
 	_ "embed"
-	"github.com/rookie-ninja/rk-entry/v2/entry"
-	"github.com/rookie-ninja/rk-grpc/v2/boot"
 	"net/http"
+
+	rkentry "github.com/rookie-ninja/rk-entry/v2/entry"
+	rkgrpc "github.com/tegarajipangestu/rk-grpc/v2/boot"
 )
 
 //go:embed boot.yaml

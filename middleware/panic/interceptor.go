@@ -7,16 +7,17 @@ package rkgrpcpanic
 
 import (
 	"fmt"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-entry/v2/middleware/panic"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
+	"runtime/debug"
+
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkmidpanic "github.com/rookie-ninja/rk-entry/v2/middleware/panic"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
+	rkgrpcctx "github.com/tegarajipangestu/rk-grpc/v2/middleware/context"
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"runtime/debug"
 )
 
 // UnaryServerInterceptor Create new unary server interceptor.

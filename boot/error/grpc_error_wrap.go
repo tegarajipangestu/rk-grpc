@@ -6,7 +6,7 @@
 package rkgrpcerr
 
 import (
-	"github.com/rookie-ninja/rk-grpc/v2/boot/error/gen"
+	rk_error "github.com/tegarajipangestu/rk-grpc/v2/boot/error/gen"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

@@ -7,10 +7,11 @@ package rkgrpcprom
 
 import (
 	"context"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-entry/v2/middleware/prom"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
+
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkmidprom "github.com/rookie-ninja/rk-entry/v2/middleware/prom"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
+	rkgrpcctx "github.com/tegarajipangestu/rk-grpc/v2/middleware/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/status"
 )

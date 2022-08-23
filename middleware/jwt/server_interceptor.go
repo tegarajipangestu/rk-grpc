@@ -8,14 +8,15 @@ package rkgrpcjwt
 import (
 	"context"
 	"fmt"
-	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-entry/v2/middleware/jwt"
-	"github.com/rookie-ninja/rk-grpc/v2/boot/error"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
-	"google.golang.org/grpc"
 	"net/http"
 	"net/url"
+
+	rkmid "github.com/rookie-ninja/rk-entry/v2/middleware"
+	rkmidjwt "github.com/rookie-ninja/rk-entry/v2/middleware/jwt"
+	rkgrpcerr "github.com/tegarajipangestu/rk-grpc/v2/boot/error"
+	rkgrpcmid "github.com/tegarajipangestu/rk-grpc/v2/middleware"
+	rkgrpcctx "github.com/tegarajipangestu/rk-grpc/v2/middleware/context"
+	"google.golang.org/grpc"
 )
 
 // UnaryServerInterceptor create new unary server interceptor.

@@ -7,11 +7,12 @@ package main
 import (
 	"context"
 	"fmt"
-	testdata "github.com/rookie-ninja/rk-grpc/v2/example/middleware/proto/testdata"
+	"log"
+
+	testdata "github.com/tegarajipangestu/rk-grpc/v2/example/middleware/proto/testdata"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
-	"log"
 )
 
 var logger, _ = zap.NewDevelopment()
