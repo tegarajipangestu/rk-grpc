@@ -1,4 +1,4 @@
-module github.com/rookie-ninja/rk-grpc/v2
+module github.com/tegarajipangestu/rk-grpc/v2
 
 go 1.17
 
